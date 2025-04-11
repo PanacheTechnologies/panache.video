@@ -8,7 +8,8 @@
 */
 
 import router from '@adonisjs/core/services/router'
-router.on('/').renderInertia('home')
+router.on('/').renderInertia('product')
+router.on('/pricing').renderInertia('pricing')
 
 const ProcessVideoController = () => import('#controllers/process-video-controller')
 router.post('/process-video', [ProcessVideoController, 'handle'])
