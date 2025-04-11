@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+
+# Build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Temporary files
+/tmp
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Environment files (except .env)
+.env.*
+!.env
+
+# Documentation
+README.md
+LICENSE
+*.md

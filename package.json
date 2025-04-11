@@ -1,0 +1,20 @@
+{
+  "name": "panache.video",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">   <a href=\"https://panache.video\">     Panache.video   </a> </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alexis Bouchez",
+  "license": "ISC",
+  "workspaces": [
+    "apps/dashboard",
+    "packages/ui",
+    "apps/marketing",
+    "apps/docs",
+    "packages/typescript-sdk",
+    "packages/orchestrators/fly"
+  ]
+}
