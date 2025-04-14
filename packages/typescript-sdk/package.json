@@ -1,13 +1,31 @@
 {
-  "name": "typescript-sdk",
+  "name": "@panache/video-sdk",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepare": "npm run build"
   },
-  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.1.2"
+  },
+  "keywords": [
+    "video",
+    "processing",
+    "sdk"
+  ],
   "author": "Alexis Bouchez",
   "license": "ISC",
-  "description": ""
+  "description": "TypeScript SDK for Panache.video API"
 }
