@@ -105,7 +105,6 @@ Panache.video uses a microservices architecture:
 - Node.js 18+
 - Docker
 - FFMPEG
-- AdonisJS CLI (`npm install -g @adonisjs/cli`)
 
 ### Local Setup
 

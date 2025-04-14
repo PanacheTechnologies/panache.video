@@ -42,7 +42,7 @@ export class Client {
   }
 
   public newPipeline(): Pipeline {
-    return new Pipeline(this);
+    return new Pipeline();
   }
 
   private async processVideo(
@@ -181,12 +181,9 @@ export class Job {
 }
 
 export class Pipeline {
-  private client: Client;
   private jobs: Job[] = [];
 
-  constructor(client: Client) {
-    this.client = client;
-  }
+  constructor() {}
 
   public addJob(job: Job): this {
     this.jobs.push(job);
