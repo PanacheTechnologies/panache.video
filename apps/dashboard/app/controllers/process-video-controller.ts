@@ -1,5 +1,6 @@
 import env from '#start/env'
 import type { HttpContext } from '@adonisjs/core/http'
+import { cuid } from '@adonisjs/core/helpers'
 
 interface MachineResponse {
   id: string
@@ -95,7 +96,7 @@ export default class ProcessVideoController {
                 },
               ],
             },
-            name: `video-processor-${Date.now()}`,
+            name: `video-processor-${cuid()}`,
             region: 'lax', // Los Angeles region
           }),
         }
